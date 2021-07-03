@@ -9,7 +9,7 @@ defmodule Wabanex.Repo.Migrations.CreateExercisesTable do
       add :repetitions, :string
       add :training_id, references(:trainings)
 
-      timestamps
+      timestamps()
     end
   end
 end

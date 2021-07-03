@@ -7,7 +7,7 @@ defmodule Wabanex.Repo.Migrations.CreateTraingingsTable do
       add :end_date, :date
       add :user_id, references(:users)
 
-      timestamps
+      timestamps()
     end
   end
 end

@@ -7,7 +7,7 @@ defmodule Wabanex.Repo.Migrations.CreateUsersTable do
       add :name, :string
       add :password, :string
 
-      timestamps
+      timestamps()
     end
 
     create unique_index(:users, [:email])

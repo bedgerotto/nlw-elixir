@@ -3,7 +3,7 @@ defmodule Wabanex.Trainings.Create do
 
   def call(params) do
     params
-    |> Training.changeset
-    |> Repo.insert
+    |> Training.changeset()
+    |> Repo.insert()
   end
 end
